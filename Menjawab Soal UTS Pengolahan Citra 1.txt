@@ -1,0 +1,18 @@
+Menjawab Soal UTS Pengolahan Citra Digital SOAL Nomer 1 
+
+1. Jelaskan perbedaan persebaran nilai keabuan antara ketiga citra.
+
+Pada citra original, persebaran nilai keabuan masih mengikuti kondisi gambar asli. Nilai piksel tersebar dari area gelap, abu-abu, sampai terang sesuai dengan objek pada gambar. Karena gambar memiliki bagian putih yang dominan dan beberapa bagian hitam, histogram original menunjukkan penumpukan nilai pada area intensitas rendah dan intensitas tinggi.
+
+Pada citra negatif, persebaran nilai keabuan menjadi kebalikan dari citra original. Nilai piksel yang awalnya gelap berubah menjadi terang, sedangkan nilai piksel yang awalnya terang berubah menjadi gelap. Oleh karena itu, histogram citra negatif terlihat seperti cerminan dari histogram citra original.
+
+Pada citra logaritmik, persebaran nilai keabuan bergeser ke arah nilai intensitas yang lebih tinggi. Bagian yang awalnya gelap atau abu-abu menjadi lebih terang karena transformasi logaritmik memperbesar nilai piksel rendah dan menengah. Histogram citra logaritmik banyak berkumpul pada area kanan karena banyak piksel terdorong mendekati nilai terang.
+
+
+2. Kapan transformasi logaritmik lebih bermanfaat dibanding negatif?
+
+Transformasi logaritmik lebih bermanfaat ketika citra memiliki banyak area gelap dan detail pada area tersebut perlu diperjelas. Transformasi ini dapat meningkatkan intensitas piksel rendah sehingga informasi yang sebelumnya kurang terlihat menjadi lebih jelas.
+
+Transformasi negatif hanya membalik nilai terang dan gelap, sehingga tidak selalu memperjelas detail citra. Jika tujuan pengolahan citra adalah memperjelas bagian gelap, maka transformasi logaritmik lebih tepat digunakan. Contohnya pada citra dengan pencahayaan rendah, citra medis, citra satelit, atau gambar yang memiliki detail penting pada area gelap.
+
+

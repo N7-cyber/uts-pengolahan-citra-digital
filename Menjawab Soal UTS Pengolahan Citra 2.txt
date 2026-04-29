@@ -1,0 +1,23 @@
+Menjawab Soal UTS Pengolahan Citra Digital SOAL Nomer 2
+
+1. Bandingkan hasil visual dan nilai piksel rata-rata dari masing-masing hasil.
+
+Pada citra original, gambar masih menampilkan bentuk, tulisan, dan latar sesuai kondisi awal. Nilai piksel rata-ratanya adalah 125.56. Nilai ini menjadi pembanding sebelum citra diberi filter.
+
+Pada hasil Low Pass Filter, citra terlihat lebih halus dan sedikit blur. Detail kecil pada tulisan dan garis menjadi berkurang karena nilai piksel diratakan dengan piksel-piksel di sekitarnya. Nilai piksel rata-ratanya adalah 125.64. Nilai ini hampir sama dengan original, sehingga LPF tidak banyak mengubah tingkat kecerahan citra, tetapi lebih berpengaruh pada penghalusan detail.
+
+Pada hasil High Pass Filter, citra terlihat lebih gelap dan bagian tepi objek menjadi lebih jelas. Tulisan, garis, dan batas antarobjek lebih menonjol, sedangkan area yang relatif rata menjadi gelap. Nilai piksel rata-ratanya adalah 27.79. Nilai ini jauh lebih rendah karena HPF lebih menampilkan perubahan intensitas tajam, bukan keseluruhan area citra.
+
+Pada hasil Band Pass Filter, citra terlihat mirip dengan original, tetapi bagian tulisan, garis, dan tepi objek tampak lebih tajam. Nilai piksel rata-ratanya adalah 125.66. Nilai ini mendekati original karena filter ini masih mempertahankan kecerahan umum citra, tetapi memperkuat detail tertentu.
+
+
+2. Jelaskan hubungan antara domain spasial dan domain frekuensi dari ketiga jenis filter tersebut.
+
+Dalam domain spasial, filter bekerja langsung pada piksel citra menggunakan kernel konvolusi. Setiap piksel diproses berdasarkan nilai piksel di sekitarnya. Efeknya dapat dilihat langsung pada gambar, misalnya menjadi blur, lebih tajam, atau menonjolkan tepi.
+
+Dalam domain frekuensi, citra dipandang berdasarkan komponen frekuensinya. Frekuensi rendah menunjukkan perubahan intensitas yang halus, seperti area latar dan bagian citra yang rata. Frekuensi tinggi menunjukkan perubahan intensitas yang tajam, seperti tepi objek, garis, tulisan, dan noise.
+
+Low Pass Filter melewatkan frekuensi rendah dan menekan frekuensi tinggi. Karena itu, hasil citra menjadi lebih halus dan blur.
+High Pass Filter melewatkan frekuensi tinggi dan menekan frekuensi rendah. Karena itu, hasil citra lebih menonjolkan tepi, garis, dan detail tajam.
+
+Band Pass Filter melewatkan atau memperkuat rentang frekuensi tertentu. Pada kernel yang digunakan, filter ini memberi efek penajaman karena detail penting pada citra diperkuat, sedangkan bentuk utama gambar tetap dipertahankan.
